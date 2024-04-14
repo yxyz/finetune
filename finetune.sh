@@ -83,6 +83,7 @@ python3 -m torch.distributed.launch --use_env --nproc_per_node=${GPUS_PER_NODE} 
           --max-epochs=${max_epochs} \
           --vision-model=${vision_model} \
           ${use_augment} \
+          ${freeze_vision}\
           --text-model=${text_model} \
           --grad-checkpointing
   
