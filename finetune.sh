@@ -44,12 +44,12 @@ report_training_batch_acc="--report-training-batch-acc"
 # training hyper-params
 context_length=52
 warmup=6
-batch_size=1024
-valid_batch_size=128
+batch_size=32
+valid_batch_size=32
 accum_freq=1
 lr=3e-5
 wd=0.001
-max_epochs=20
+max_epochs=3
 valid_step_interval=999999
 valid_epoch_interval=1
 vision_model=ViT-H-14
