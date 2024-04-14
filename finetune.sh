@@ -84,6 +84,6 @@ python3 -m torch.distributed.launch --use_env --nproc_per_node=${GPUS_PER_NODE} 
           --vision-model=${vision_model} \
           ${use_augment} \
           --text-model=${text_model} \
-          --freeze_vision=${freeze_vision}\
+          --freeze-vision=${freeze_vision}\
           --grad-checkpointing
   
