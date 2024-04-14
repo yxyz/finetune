@@ -55,7 +55,7 @@ valid_epoch_interval=1
 vision_model=ViT-H-14
 text_model=RoBERTa-wwm-ext-large-chinese
 use_augment="--use-augment"
-freeze_vision=0
+freeze_vision="--freeze-vision"
 # use_augment=""
 
 python3 -m torch.distributed.launch --use_env --nproc_per_node=${GPUS_PER_NODE} --nnodes=${WORKER_CNT} --node_rank=${RANK} \
@@ -84,6 +84,5 @@ python3 -m torch.distributed.launch --use_env --nproc_per_node=${GPUS_PER_NODE} 
           --vision-model=${vision_model} \
           ${use_augment} \
           --text-model=${text_model} \
-          --freeze-vision=${freeze_vision}\
           --grad-checkpointing
   
