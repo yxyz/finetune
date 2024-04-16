@@ -20,7 +20,7 @@ export RANK=0
 
 export PYTHONPATH=${PYTHONPATH}:`pwd`/cn_clip/
 
-DATAPATH='/kaggle/input/fork-of-data-preprocess'
+DATAPATH='/kaggle/input/fork-of-data-preprocess2'
 
 # data options
 train_data=${DATAPATH}/fj1/lmdb/train
