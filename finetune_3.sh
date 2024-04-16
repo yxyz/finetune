@@ -47,7 +47,7 @@ warmup=6
 batch_size=128
 valid_batch_size=128
 #测试最大batch的情况
-accum_freq=200
+accum_freq=128
 lr=3e-5
 wd=0.001
 max_epochs=6
