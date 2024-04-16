@@ -59,7 +59,7 @@ freeze_vision="--freeze-vision"
 # use_augment=""
 
 python3 -m torch.distributed.launch --use_env --nproc_per_node=${GPUS_PER_NODE} --nnodes=${WORKER_CNT} --node_rank=${RANK} \
-          --master_addr=${MASTER_ADDR} --master_port=${MASTER_PORT} /kaggle/input/fork-of-data-preprocess/Chinese-CLIP/cn_clip/training/main.py \
+          --master_addr=${MASTER_ADDR} --master_port=${MASTER_PORT} /kaggle/working/Chinese-CLIP/cn_clip/training/main.py \
           --train-data=${train_data} \
           --val-data=${val_data} \
           --resume=${resume} \
