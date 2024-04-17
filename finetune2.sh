@@ -44,9 +44,11 @@ report_training_batch_acc="--report-training-batch-acc"
 # training hyper-params
 context_length=52
 warmup=6
-batch_size=128
+#128
+batch_size=32
 valid_batch_size=128
-accum_freq=32
+#32
+accum_freq=1
 lr=3e-5
 wd=0.001
 max_epochs=3
