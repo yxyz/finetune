@@ -45,10 +45,10 @@ report_training_batch_acc="--report-training-batch-acc"
 context_length=52
 warmup=6
 #128
-batch_size=32
+batch_size=128
 valid_batch_size=128
 #32
-accum_freq=1
+accum_freq=32
 lr=3e-5
 wd=0.001
 max_epochs=3
