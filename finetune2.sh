@@ -27,8 +27,8 @@ train_data=${DATAPATH}/fj1/lmdb/train
 val_data=${DATAPATH}/fj1/lmdb/valid # if val_data is not specif  ied, the validation will be automatically disabled
 
 # restore options
-# resume=/kaggle/working/pretrained_weights/clip_cn_vit-h-14.pt # or specify your customed ckpt path to resume
-resume=/kaggle/input/layer12-epoch6/epoch_latest.pt
+resume=/kaggle/working/pretrained_weights/clip_cn_vit-h-14.pt # or specify your customed ckpt path to resume
+#resume=/kaggle/input/layer12-epoch6/epoch_latest.pt
 reset_data_offset="--reset-data-offset"
 reset_optimizer="--reset-optimizer"
 # reset_optimizer=""
