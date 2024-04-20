@@ -28,7 +28,7 @@ val_data=${DATAPATH}/fj1/lmdb/valid # if val_data is not specif  ied, the valida
 
 # restore options
 #resume=/kaggle/working/pretrained_weights/clip_cn_vit-h-14.pt # or specify your customed ckpt path to resume
-resume=/kaggle/input/layer16-epoch3/epoch_latest.pt
+resume=/kaggle/input/layer16-epoch6/epoch_latest.pt
 reset_data_offset="--reset-data-offset"
 reset_optimizer="--reset-optimizer"
 # reset_optimizer=""
